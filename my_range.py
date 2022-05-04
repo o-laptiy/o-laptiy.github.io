@@ -1,6 +1,6 @@
 def my_range(m,n):
     my_list = []
-    while (m <= n):
+    while (m < n):
         my_list.append(m)
         m+=1
     print(my_list)
