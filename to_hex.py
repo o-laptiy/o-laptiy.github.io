@@ -1,6 +1,8 @@
 def to_hex(n):
     hex_num = ""
     if ((n >= 0) & (n < 256)):
+        if (n == 0):
+            hex_num = "0"
         while (n != 0):
             rem = n % 16 
             match rem:
@@ -35,4 +37,4 @@ def hex_code(red, green, blue):
         blue_hex = '0' + blue_hex
     hex_result = hex_result + red_hex + green_hex + blue_hex
     print(hex_result)
-hex_code(10,9,255)
+hex_code(0,0,0)
