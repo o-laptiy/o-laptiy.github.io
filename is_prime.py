@@ -1,10 +1,13 @@
 def is_prime(n):
 	prime = True
-	for i in range(2, 10):
-		if (n % i == 0 and (n != i) or (n == 1)):
+	i = 2
+	j = 0
+	while(i * i <= n and prime != False):
+		if (n % i == 0):
 			prime = False
-			break
+		i += 1
 	return(prime)
-##for j in range(1, 21):
+##for j in range(1, 175):
 ##        k = is_prime(j)
-##        print("number %i is prime: %s" % (j, k))
+##        if (k == True):
+##        	print("number %i is prime" % (j))
