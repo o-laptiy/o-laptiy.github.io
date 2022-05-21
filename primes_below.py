@@ -1,9 +1,12 @@
 def is_prime(n):
 	prime = True
-	for i in range(2, 10):
-		if (n % i == 0 and (n != i) or (n == 1)):
+	i = 2
+	if(n == 1):
+		prime = False
+	while(i * i <= n and prime != False):
+		if (n % i == 0):
 			prime = False
-			break
+		i += 1
 	return(prime)
 def primes_below(n):
 	primes = []
