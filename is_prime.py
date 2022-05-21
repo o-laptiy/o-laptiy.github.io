@@ -1,6 +1,8 @@
 def is_prime(n):
 	prime = True
 	i = 2
+	if(n == 1):
+		prime = False
 	while(i * i <= n and prime != False):
 		if (n % i == 0):
 			prime = False
