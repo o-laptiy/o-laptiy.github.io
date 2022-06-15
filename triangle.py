@@ -19,14 +19,18 @@ class Triangle():
 	def is_valid(self):
 		if((self.a + self.b > self.c) and (self.a + self.c > self.b) and (self.b + self.c > self.a)):
 			return True
+		else:
+			return False
 
 	def is_right(self):
 		if(math.pow(self.a, 2) + math.pow(self.b, 2) == math.pow(self.c, 2) or 
 			math.pow(self.b, 2) + math.pow(self.c, 2) == math.pow(self.a, 2) or 
 			math.pow(self.a, 2) + math.pow(self.c, 2) == math.pow(self.b, 2)):
 			return True
+		else:
+			return False
 
-r = Triangle(3, 4, 5)
+r = Triangle(1, 6, 7)
 
 print("Area = %d" % r.area())
 
